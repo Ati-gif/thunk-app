@@ -1,8 +1,6 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.5.1"
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "~> 6.0.2", ">= 6.0.2.1"
 # Use postgresql as the database for Active Record
@@ -31,7 +29,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "faker", :git => "https://github.com/stympy/faker.git", :branch => "master"
+  gem "faker"
   gem "pry-rails"
   gem "better_errors"
   gem "binding_of_caller"
